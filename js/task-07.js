@@ -6,4 +6,4 @@ const onFontSizeChange = (event) => {
 }
 
 
-fontSizeControl.addEventListener('change', onFontSizeChange)
+fontSizeControl.addEventListener('input', onFontSizeChange)

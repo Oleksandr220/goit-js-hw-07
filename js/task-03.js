@@ -25,11 +25,11 @@ gallery.style.display = 'flex';
 const makeGallery = images => {
   return images.map(image => {
     let newElementString = '';
-    const galleryList = `<li class = 'galery-item'><img width = '400px' height = '250px' src="${image.url}" alt="${image.alt}"></li>`;
+    const galleryList = `<li><img width = '400px' height = '250px' src="${image.url}" alt="${image.alt}"></li>`;
     return newElementString += galleryList
   })
 }
 
-const imageRefs = makeGallery(images)
+const imageRefs = makeGallery(images).join(' ')
 
 gallery.insertAdjacentHTML('afterbegin', imageRefs)
